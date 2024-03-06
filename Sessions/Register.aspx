@@ -12,7 +12,7 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label>Name:</label>
-                        <asp:TextBox runat="server" ID="txtName" CssClass="form-control"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="txtName"  CssClass="form-control"></asp:TextBox>
                     </div>
                     <div class="form-group">
                         <label>Contact:</label>
@@ -32,7 +32,7 @@
                         </asp:DropDownList>
                     </div>
                     
-                    <div class="form-group">
+                  <%--  <div class="form-group">
                         <label>DOB:</label>
                         <asp:TextBox ID="txtDOB" CssClass="form-control" TextMode="Date" runat="server"></asp:TextBox>
                     </div>
@@ -43,9 +43,9 @@
                     <div class="form-group">
                         <label>Set Password:</label>
                         <asp:TextBox ID="txtPassword" CssClass="form-control" TextMode="Password" runat="server"></asp:TextBox>
-                    </div>
+                    </div>--%>
 
-                    <asp:Button runat="server" ID="btnSubmit" Text="Submit" CssClass="btn btn-primary" />
+                    <asp:Button runat="server" OnClick="btnSubmit_Click" ID="btnSubmit" Text="Submit" CssClass="btn btn-primary" />
                 </div>
             </div>
         </div>
